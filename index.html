@@ -6,27 +6,109 @@
     <title>我的個人網站</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             text-align: center;
-            margin-top: 50px;
         }
-        img {
-            width: 200px;
-            height: 200px;
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .photo {
             border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
             border: 5px solid #333;
         }
-        h1 {
-            color: #4CAF50;
-        }
-        p {
+
+        .intro {
             color: #555;
+            font-size: 1.2rem;
+            margin: 0 20px;
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .resume-btn {
+            background-color: #ff9f00;
+        }
+
+        .projects-btn {
+            background-color: #e74c3c;
+        }
+
+        .contact-btn {
+            background-color: #3498db;
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
+
+<header>
     <h1>歡迎來到我的網站！</h1>
-    <img src="myphoto.jpg" alt="我的照片">
-    <p>你好，我是鯉魚，這是我的個人網站。</p>
+</header>
+
+<div>
+    <!-- 圖片區塊 -->
+    <img src="myphoto.jpg" alt="我的照片" class="photo">
+    <h2>Hello</h2>
+    <p class="intro">A Bit About Me: 請在這裡寫上一些介紹關於你的內容。</p>
+
+    <!-- 主要按鈕區塊 -->
+    <div class="buttons">
+        <a href="#resume" class="resume-btn">Resume</a>
+        <a href="#projects" class="projects-btn">Projects</a>
+        <a href="#contact" class="contact-btn">Contact</a>
+    </div>
+</div>
+
+<footer>
+    <p>Phone: 123-456-7890 | Email: info@mywebsite.com</p>
+    <div>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Twitter</a>
+    </div>
+    <p>&copy; 2025 My Website</p>
+</footer>
+
 </body>
 </html>
